@@ -17,6 +17,7 @@
     width: 100px;
     height: 100px;
     background: red;
+    transition: 2s;
 }
 .ex-5-square {
     margin: 20px;
@@ -68,5 +69,37 @@
     height: 20px;
 }
 
-.
+@keyframes color-change {
+    100% {
+        background-color: red;
+    }
+}
+@keyframes grow-width {
+    100% {
+        width: 100%;
+    }
+}
+@keyframes make-circle {
+    100% {
+        border-radius: 50%;
+    }
+}
 
+.ex-1-square:hover {
+    animation: color-change;
+    animation-duration: 3s;
+}
+
+.ex-2-square:active {
+    animation: grow-width;
+    animation-duration: 3s;
+}
+
+.ex-3-square:hover {
+    animation: make-circle;
+    animation-duration: 3s;
+}
+
+.ex-4-square:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
